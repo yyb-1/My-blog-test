@@ -118,15 +118,18 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
-print (BASE_DIR)
+
+
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,'/portfolio/static/')
+    os.path.join(BASE_DIR,'portfolio/static/')
 ]
 #以上指定静态文件存放位置，它是列表，可以放多个，比如 博客一个，简历一个等等。 可以设置为不同的目录
+
 
 STATIC_URL = '/static/'   # 指向静态文件后，URL上显示的url目录
 
 STATIC_ROOT = os.path.join(BASE_DIR,'static')  # 静态文件根目录
+
 
 #以上静态设置后，还需要在CMD中运行 python manage.py collectstatic 收集所有静态文件
 

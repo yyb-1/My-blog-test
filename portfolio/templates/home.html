@@ -20,7 +20,7 @@
 <!doctype html>
 <html lang="en">
 <!--引用静态文件要先导入-->
-{% load staticfiles %}
+    {% load staticfiles %}
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -71,14 +71,14 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-8 col-md-7 py-4">
-          <h4 class="text-white">About</h4>
-          <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+          <h4 class="text-white">关于</h4>
+          <p class="text-muted">本人自学的第一个网站</p>
         </div>
         <div class="col-sm-4 offset-md-1 py-4">
-          <h4 class="text-white">Contact</h4>
+          <h4 class="text-white">联系方式</h4>
           <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Follow on Twitter</a></li>
-            <li><a href="#" class="text-white">Like on Facebook</a></li>
+            <li><a href="#" class="text-white">大卫</a></li>
+            <li><a href="#" class="text-white">Like on Linkedin</a></li>
             <li><a href="#" class="text-white">Email me</a></li>
           </ul>
         </div>
@@ -103,9 +103,10 @@
   <section class="py-5 text-center container">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Album example</h1>
-        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+        <h1 class="fw-light">我的第一个网页</h1>
         <p>
+            <img src="{% static 'pic.jpg' %}" width=50%>
+            <br>
 <!--          在主页中链接博客网页, href = 'blog/'表示在本网址后面加blog, 也就是127.0.0.1:8000/blog/-->
           <a href="blog/" class="btn btn-primary my-2">我的博客</a>
 <!--            static是存放静态文件，以下是点“我的简历”自动跳转到resume.pdf这个静态文件中-->
